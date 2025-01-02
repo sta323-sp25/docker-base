@@ -1,4 +1,4 @@
-FROM rocker/r-ubuntu:20.04
+FROM rocker/r-ubuntu:24.04
 
 ADD Rprofile.site /usr/lib/R/etc/Rprofile.site
 
