@@ -27,7 +27,7 @@ RUN apt-get update \
         && wget -q -O - https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc \
                 | tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc  \
         && add-apt-repository --yes "ppa:marutter/rrutter4.0" \
-        && add-apt-repository --yes "ppa:c2d4u.team/c2d4u4.0+" \
+        #&& add-apt-repository --yes "ppa:c2d4u.team/c2d4u4.0+" \
         && add-apt-repository --yes "ppa:edd/misc"
 
 
