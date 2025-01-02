@@ -38,5 +38,5 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/sta323-sp24/sta323-base:latest
+          tags: ghcr.io/sta323-sp25/sta323-base:latest
           
