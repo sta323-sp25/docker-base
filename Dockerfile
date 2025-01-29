@@ -70,6 +70,10 @@ RUN apt-get update \
 
 ADD Rprofile.site /usr/lib/R/etc/Rprofile.site
 
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.40/quarto-1.6.40-linux-amd64.deb \
+    && DEBIAN_FRONTEND=noninteractive gdebi --n quarto-*-linux-amd64.deb \
+    && rm quarto-*-linux-amd64.deb
+
 RUN install.r devtools rmarkdown tidyverse gifski \
  && installGithub.r rundel/checklist rundel/parsermd
 
