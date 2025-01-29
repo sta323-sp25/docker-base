@@ -24,6 +24,7 @@ RUN apt-get update \
 		vim-tiny \
 		wget \
 		ca-certificates \
+  		gdebi \
         && wget -q -O - https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc \
                 | tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc  \
         && add-apt-repository --yes "ppa:marutter/rrutter4.0" \
